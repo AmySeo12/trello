@@ -62,4 +62,15 @@ form {
 	float: none;
 	font-size: 2.5em;
 }
-/**/
+
+.padding {
+	padding: 5px;
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+.grey {
+	color: #B3B4B5;
+}
