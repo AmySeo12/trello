@@ -2,19 +2,18 @@ body {
 	background-image: url(../img/fondo.jpg);
 	font-family:Arial;
 	padding: 20px;
+	white-space: nowrap;
 }
 
 form {
 	display: inline-block;
-	width: 20%;
 }
 
 .lista{
-	padding: 10px;
-	width: 19%;
+	padding: 10px 40px;
 	background-color: rgba(0,0,0,0.4);
 	display: inline-block;
-	margin-right: 5px;
+	margin-left: 13px;
 }
 
 .lista:hover{
@@ -25,6 +24,7 @@ form {
 	background-color: #E2E4E6;
 	padding: 4px;
 	border-radius: 5px;
+	margin-left: 3px;
 }
 
 .button:hover{
@@ -36,6 +36,10 @@ form {
 	padding: 10px 20px;
 	margin-top: 10px;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+.formulario, .lista {
+	margin-bottom: 5px;
 }
 
 .lista, .button {
@@ -50,13 +54,13 @@ form {
 }
 
 .formulario input{
-	width: 90%;
 	box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 8px inset;
 	background-color: rgba(0, 0, 0, 0.0470588);
 	padding: 10px;
 	border-radius: 5px;
 	border-color: rgb(170, 170, 170);
 	font-size: 1em;
+	display: block;
 }
 
 .close{
@@ -65,7 +69,7 @@ form {
 }
 
 .padding {
-	padding: 5px;
+	padding: 10px 40px 10px 20px;
 }
 
 .negrita {
@@ -90,10 +94,21 @@ form {
 	background-color: white;
 }
 
-.width {
-	width: 20%;
-}
-
 .inline-block {
 	display: inline-block;
+}
+
+.padre {
+	display: inline-block;
+	height: auto;
+}
+
+.textArea{
+	border-radius: 5px;
+	font-size: 1em;
+	display: block;
+}
+
+.float-left{
+	float: left;
 }
