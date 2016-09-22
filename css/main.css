@@ -13,7 +13,8 @@ form {
 	padding: 10px;
 	width: 19%;
 	background-color: rgba(0,0,0,0.4);
-	display: block;
+	display: inline-block;
+	margin-right: 5px;
 }
 
 .lista:hover{
@@ -69,8 +70,30 @@ form {
 
 .negrita {
 	font-weight: bold;
+	text-decoration: none;
 }
 
-.grey {
+.grey a{
 	color: #B3B4B5;
+}
+
+.grey:hover{
+	background-color: #CDD2D4;
+	text-decoration: underline;
+}
+
+.grey:hover a{
+	color: black;
+}
+
+.white {
+	background-color: white;
+}
+
+.width {
+	width: 20%;
+}
+
+.inline-block {
+	display: inline-block;
 }
