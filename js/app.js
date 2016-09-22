@@ -43,7 +43,8 @@ window.addEventListener("load", function(){
     	for(var i=0; i<select.length; i++){
     		select[i].addEventListener("click", function(){
     			this.classList.add("none");
-    			crearFormulario("form", contenedor, "formulario");
+    			crearFormulario("form", contenedor, "formulario", this);
+    			mensajes.focus();
     		});
     	}
 
@@ -56,7 +57,7 @@ window.addEventListener("load", function(){
     	agregar(formulario, div);
     });
 
-    function crearFormulario(formulario, padre, clase1){
+    function crearFormulario(formulario, padre, clase1, select){
     	var formula = document.createElement(formulario);
     	formula.classList.add(clase1);
     	padre.appendChild(formula);
@@ -66,7 +67,13 @@ window.addEventListener("load", function(){
 
     	formula.lastElementChild.addEventListener("click", function(e){
     		e.preventDefault();
-    		alert("Estoy");
+    		select.classList.remove("none");
+
+    		var mensajes = document.createElement("div");
+			mensajes.innerHTML=formula.firstElementChild.value;
+    		formula.classList.add("none");
+    		mensajes.classList.add("mensajes");
+			padre.insertBefore(mensajes, select);
     	})
     }
 

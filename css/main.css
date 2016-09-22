@@ -112,3 +112,8 @@ form {
 .float-left{
 	float: left;
 }
+
+.mensajes {
+	padding: 5px;
+	background-color: white;
+}
