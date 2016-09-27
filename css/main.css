@@ -3,6 +3,13 @@ body {
 	font-family:Arial;
 	padding: 20px;
 	white-space: nowrap;
+	scrollbar-face-color:#8080FF ;
+	scrollbar-arrow-color:#FFFFFF ;
+	scrollbar-track-color:#DDDDFF ;
+	scrollbar-shadow-color:'';
+	scrollbar-highlight-color:'';
+	scrollbar-3dlight-color:'';
+	scrollbar-darkshadow-Color:'';
 }
 
 form {
@@ -101,6 +108,7 @@ form {
 .padre {
 	display: inline-block;
 	height: auto;
+	vertical-align: top;
 }
 
 .textArea{
@@ -109,11 +117,12 @@ form {
 	display: block;
 }
 
-.float-left{
-	float: left;
-}
 
 .mensajes {
 	padding: 5px;
 	background-color: white;
+}
+
+.o-auto {
+	overflow: auto;
 }

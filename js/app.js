@@ -30,7 +30,6 @@ window.addEventListener("load", function(){
     	contenedor.classList.add("formulario");
     	contenedor.classList.add("width");
     	contenedor.classList.add("inline-block");
-    	contenedor.classList.add("float-left");
     	contenedorPadre.insertBefore(contenedor, contenedorPadre.lastElementChild);
     	
     	agregar(formulario, div);
@@ -44,7 +43,6 @@ window.addEventListener("load", function(){
     		select[i].addEventListener("click", function(){
     			this.classList.add("none");
     			crearFormulario("form", contenedor, "formulario", this);
-    			mensajes.focus();
     		});
     	}
 
