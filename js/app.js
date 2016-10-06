@@ -32,7 +32,7 @@ window.addEventListener("load", function(){
     	contenedor.classList.add("inline-block");
     	contenedorPadre.insertBefore(contenedor, contenedorPadre.lastElementChild);
 
-        /*contenedor.addEventListener("dragenter", function(){
+        contenedor.addEventListener("dragenter", function(){
             this.classList.add("auto");
         });
         contenedor.addEventListener("dragover", function(e){
@@ -44,7 +44,7 @@ window.addEventListener("load", function(){
             var contenedorMensaje= e.dataTransfer.getData("text");
             var element= document.getElementById(contenedorMensaje);
             this.insertBefore(element, this.firstElementChild.nextElementSibling);
-        }, true);*/
+        }, true);
     	
     	agregar(formulario, div);
 
@@ -94,10 +94,10 @@ window.addEventListener("load", function(){
                 this.classList.add("dragstar");
             });
             mensajes.addEventListener("dragenter", function(){
-                //this.classList.add("dragenter");
+                this.classList.add("dragenter");
             });
             mensajes.addEventListener("dragleave", function(){
-                //this.classList.remove("dragenter")
+                this.classList.remove("dragenter")
                 this.classList.remove("dragover");
             });
             mensajes.addEventListener("dragover", function(e){
@@ -105,8 +105,8 @@ window.addEventListener("load", function(){
                 this.classList.add("dragover");
             });
             mensajes.addEventListener("drop", function(e){
-                //this.classList.add("animated", "rubberBand", "big");
-                //this.classList.remove("dragenter");
+                this.classList.add("animated", "rubberBand", "big");
+                this.classList.remove("dragenter");
                 this.classList.remove("dragover");
                 var contenedorMensaje= e.dataTransfer.getData("text");
                 var element= document.getElementById(contenedorMensaje);

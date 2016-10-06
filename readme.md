@@ -23,3 +23,19 @@ Al dar click en el botón de guardar al momento de añadir tarjeta, mostrar el m
 ##Versión 0.0.6: 
 
 Asegurar la funcionalidad de poder agregar múltiples listas y tarjetas.
+
+##VERSIÓN 0.1.0
+
+Implementar el evento Drag & Drop de las tarjetas para que pueda ser movida entre las listas creadas.
+
+##VERSIÓN 0.1.1
+
+Agregar un estilo personalizado a la tarjeta cuando esté siendo arrastrada por el usuario.
+
+##VERSIÓN 0.1.2
+
+Agregar un estilo a la lista cuando la tarjeta esté pasando por encima (dragover).
+
+##VERSIÓN 0.1.3
+
+Agregar una transición css cuando la tarjeta y/o lista haya sido colocada en una nueva lista.
