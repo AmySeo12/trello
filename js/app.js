@@ -94,17 +94,17 @@ window.addEventListener("load", function(){
                 this.classList.add("dragstar");
             });
             mensajes.addEventListener("dragenter", function(){
-                this.classList.add("dragenter");
+                //this.classList.add("dragenter");
             });
             mensajes.addEventListener("dragleave", function(){
-                this.classList.remove("dragenter")
+                //this.classList.remove("dragenter")
             });
             mensajes.addEventListener("dragover", function(e){
                 e.preventDefault();
             });
             mensajes.addEventListener("drop", function(e){
                 //this.classList.add("animated", "rubberBand", "big");
-                this.classList.remove("dragenter");
+                //this.classList.remove("dragenter");
                 var contenedorMensaje= e.dataTransfer.getData("text");
                 var element= document.getElementById(contenedorMensaje);
                 this.parentElement.insertBefore(element, this.nextElementSibling);
