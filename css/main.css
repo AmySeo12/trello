@@ -152,3 +152,6 @@ form {
 .dragenter{
 	background-color: blue;
 }
+.dragover{
+	border: 1px dashed black;
+}

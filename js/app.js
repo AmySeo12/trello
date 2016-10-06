@@ -98,13 +98,16 @@ window.addEventListener("load", function(){
             });
             mensajes.addEventListener("dragleave", function(){
                 //this.classList.remove("dragenter")
+                this.classList.remove("dragover");
             });
             mensajes.addEventListener("dragover", function(e){
                 e.preventDefault();
+                this.classList.add("dragover");
             });
             mensajes.addEventListener("drop", function(e){
                 //this.classList.add("animated", "rubberBand", "big");
                 //this.classList.remove("dragenter");
+                this.classList.remove("dragover");
                 var contenedorMensaje= e.dataTransfer.getData("text");
                 var element= document.getElementById(contenedorMensaje);
                 this.parentElement.insertBefore(element, this.nextElementSibling);
