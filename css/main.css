@@ -32,6 +32,7 @@ form {
 	padding: 4px;
 	border-radius: 5px;
 	margin-left: 3px;
+	width: 90%;
 }
 
 .button:hover{
@@ -61,6 +62,7 @@ form {
 }
 
 .formulario input{
+	width: 87%;
 	box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 8px inset;
 	background-color: rgba(0, 0, 0, 0.0470588);
 	padding: 10px;
@@ -77,6 +79,7 @@ form {
 
 .padding {
 	padding: 10px 40px 10px 20px;
+	word-wrap: break-word;
 }
 
 .negrita {
@@ -103,6 +106,8 @@ form {
 
 .inline-block {
 	display: inline-block;
+	vertical-align: top;
+	width: 14%;
 }
 
 .padre {
@@ -115,14 +120,35 @@ form {
 	border-radius: 5px;
 	font-size: 1em;
 	display: block;
+	width: 65%;
 }
 
 
 .mensajes {
 	padding: 5px;
 	background-color: white;
+	word-wrap: break-word;
+	white-space: pre-line;
+	margin-bottom: 5px;
 }
 
 .o-auto {
 	overflow: auto;
+}
+
+.saltos {
+	word-wrap: break-word;
+}
+
+.auto{
+	height: auto;
+	background-color: gray;
+}
+
+.dragstar{
+	background-color: transparent;
+}
+
+.dragenter{
+	background-color: blue;
 }
