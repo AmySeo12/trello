@@ -141,8 +141,7 @@ form {
 }
 
 .auto{
-	height: auto;
-	background-color: gray;
+	background-color: rgba(226,228,230, 0.7);
 }
 
 .dragstar{
@@ -150,7 +149,7 @@ form {
 }
 
 .dragenter{
-	background-color: blue;
+	background-color: #9999CC;
 }
 .dragover{
 	border: 1px dashed black;

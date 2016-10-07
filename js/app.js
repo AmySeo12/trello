@@ -32,11 +32,11 @@ window.addEventListener("load", function(){
     	contenedor.classList.add("inline-block");
     	contenedorPadre.insertBefore(contenedor, contenedorPadre.lastElementChild);
 
-        contenedor.addEventListener("dragenter", function(){
-            this.classList.add("auto");
+        contenedor.addEventListener("dragleave", function(){
+            this.classList.remove("auto");
         });
         contenedor.addEventListener("dragover", function(e){
-            this.classList.remove("auto");
+            this.classList.add("auto");
             e.preventDefault();
         });
         contenedor.addEventListener("drop", function(e){
@@ -44,7 +44,10 @@ window.addEventListener("load", function(){
             var contenedorMensaje= e.dataTransfer.getData("text");
             var element= document.getElementById(contenedorMensaje);
             this.insertBefore(element, this.firstElementChild.nextElementSibling);
-        }, true);
+            element.classList.add("animated", "rubberBand", "big");
+            element.classList.remove("dragenter");
+            element.classList.remove("dragover");
+        });
     	
     	agregar(formulario, div);
 
@@ -105,13 +108,15 @@ window.addEventListener("load", function(){
                 this.classList.add("dragover");
             });
             mensajes.addEventListener("drop", function(e){
-                this.classList.add("animated", "rubberBand", "big");
+                this.parentElement.classList.remove("auto"); 
                 this.classList.remove("dragenter");
                 this.classList.remove("dragover");
                 var contenedorMensaje= e.dataTransfer.getData("text");
                 var element= document.getElementById(contenedorMensaje);
+                element.classList.add("animated", "rubberBand", "big");
                 this.parentElement.insertBefore(element, this.nextElementSibling);
-            }, true);
+                e.stopPropagation();
+            });
             mensajes.addEventListener("dragend", function(){
                 this.classList.remove("dragstar");           
             });
